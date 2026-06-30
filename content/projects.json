@@ -60,6 +60,19 @@
       ],
       "published": true,
       "featured": false
+    },
+    {
+      "slug": "ur-mom",
+      "title": "Ur mom",
+      "year": 2026,
+      "category": "design",
+      "description": "Hey there",
+      "cover": "uploads/ur-mom/01.jpg",
+      "images": [
+        "uploads/ur-mom/01.jpg"
+      ],
+      "published": true,
+      "featured": false
     }
   ]
 }
