@@ -1,0 +1,67 @@
+name: Add portfolio project
+description: Upload a new project without editing code.
+title: "Add project: "
+labels:
+  - content
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Project title
+      placeholder: City Portraits
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - portrait
+        - event
+        - personal
+        - commercial
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      placeholder: "2026"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One or two short sentences is enough.
+      placeholder: A quiet session focused on clean light and simple framing.
+    validations:
+      required: false
+  - type: textarea
+    id: images
+    attributes:
+      label: Image URLs or uploaded images
+      description: Paste image URLs, or drag images into this box after the issue form opens in GitHub.
+      placeholder: |
+        https://example.com/photo-01.jpg
+        https://example.com/photo-02.jpg
+    validations:
+      required: false
+  - type: dropdown
+    id: featured
+    attributes:
+      label: Featured on homepage?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: dropdown
+    id: published
+    attributes:
+      label: Publish now?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true

@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "slug": "city-portraits",
+      "title": "City Portraits",
+      "year": 2026,
+      "category": "portrait",
+      "description": "A quiet portrait session built around clean light, direct framing, and simple movement.",
+      "cover": "/sample/portrait-01.svg",
+      "images": ["/sample/portrait-01.svg", "/sample/portrait-02.svg"],
+      "published": true,
+      "featured": true
+    },
+    {
+      "slug": "studio-notes",
+      "title": "Studio Notes",
+      "year": 2026,
+      "category": "personal",
+      "description": "Personal studies in shape, negative space, and subdued color.",
+      "cover": "/sample/personal-01.svg",
+      "images": ["/sample/personal-01.svg", "/sample/personal-02.svg"],
+      "published": true,
+      "featured": true
+    },
+    {
+      "slug": "night-event",
+      "title": "Night Event",
+      "year": 2026,
+      "category": "event",
+      "description": "Event coverage focused on candid gestures, atmosphere, and small moments between groups.",
+      "cover": "/sample/event-01.svg",
+      "images": ["/sample/event-01.svg", "/sample/event-02.svg"],
+      "published": true,
+      "featured": false
+    }
+  ]
+}
