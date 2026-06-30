@@ -47,17 +47,18 @@ img {
 }
 
 .site-header {
-  position: fixed;
+  position: sticky;
   z-index: 10;
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   padding: 26px 34px;
-  color: #fff;
-  mix-blend-mode: difference;
+  color: var(--text);
+  background: rgb(247 244 238 / 94%);
+  border-bottom: 1px solid rgb(216 208 196 / 70%);
+  backdrop-filter: blur(14px);
+  top: 0;
 }
 
 .brand {
@@ -74,6 +75,7 @@ img {
   gap: 18px;
   color: inherit;
   font-size: 14px;
+  line-height: 1.2;
 }
 
 .page-shell {
@@ -328,7 +330,8 @@ h2 {
   .site-header {
     align-items: flex-start;
     flex-direction: column;
-    padding: 20px;
+    gap: 14px;
+    padding: 18px;
   }
 
   .site-nav {
