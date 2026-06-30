@@ -55,9 +55,11 @@ img {
   gap: 24px;
   padding: 26px 34px;
   color: var(--text);
-  background: rgb(247 244 238 / 94%);
-  border-bottom: 1px solid rgb(216 208 196 / 70%);
-  backdrop-filter: blur(14px);
+  background: linear-gradient(135deg, rgb(255 255 255 / 46%), rgb(247 244 238 / 24%));
+  border-bottom: 1px solid rgb(255 255 255 / 42%);
+  box-shadow: 0 18px 42px rgb(40 34 28 / 8%), inset 0 1px 0 rgb(255 255 255 / 62%);
+  backdrop-filter: blur(22px) saturate(145%);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
   top: 0;
 }
 
