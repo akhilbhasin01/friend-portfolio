@@ -1,4 +1,4 @@
-const categories = ["portrait", "event", "personal", "commercial"];
+const categories = ["design", "photography", "social", "marketing"];
 const titleCase = (value) => `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
 
 let projects = [];

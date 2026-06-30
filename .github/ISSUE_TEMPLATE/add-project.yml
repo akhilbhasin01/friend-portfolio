@@ -16,10 +16,10 @@ body:
     attributes:
       label: Category
       options:
-        - portrait
-        - event
-        - personal
-        - commercial
+        - design
+        - photography
+        - social
+        - marketing
     validations:
       required: true
   - type: input

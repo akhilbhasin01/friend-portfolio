@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 
-const validCategories = new Set(["portrait", "event", "personal", "commercial"]);
+const validCategories = new Set(["design", "photography", "social", "marketing"]);
 const data = JSON.parse(await readFile("content/projects.json", "utf8"));
 
 if (!Array.isArray(data.projects)) {

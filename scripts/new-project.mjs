@@ -1,9 +1,9 @@
 import { readFile, writeFile } from "node:fs/promises";
 
-const [title, category = "portrait", year = new Date().getFullYear().toString()] = process.argv.slice(2);
+const [title, category = "design", year = new Date().getFullYear().toString()] = process.argv.slice(2);
 
 if (!title) {
-  console.error('Usage: npm run content:new -- "Project Title" portrait 2026');
+  console.error('Usage: npm run content:new -- "Project Title" design 2026');
   process.exit(1);
 }
 

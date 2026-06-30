@@ -98,8 +98,8 @@ function field(fields, key, fallback) {
 
 function normalizeCategory(value) {
   const category = value.toLowerCase().trim();
-  if (["portrait", "event", "personal", "commercial"].includes(category)) return category;
-  return "portrait";
+  if (["design", "photography", "social", "marketing"].includes(category)) return category;
+  return "design";
 }
 
 function extractUrls(value) {

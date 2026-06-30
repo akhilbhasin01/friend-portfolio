@@ -24,7 +24,7 @@ Use GitHub Issues:
 ## Add content locally
 
 ```bash
-npm run content:new -- "Project Title" portrait 2026
+npm run content:new -- "Project Title" design 2026
 ```
 
 Then edit the generated project entry in `content/projects.json`.
