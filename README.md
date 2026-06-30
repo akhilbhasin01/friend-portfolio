@@ -35,7 +35,7 @@ The site deploys to GitHub Pages through `.github/workflows/deploy.yml` whenever
 
 ## Custom domain
 
-1. Edit `public/CNAME` and replace `your-domain.com`.
+1. Create `public/CNAME` with only the custom domain, such as `example.com`.
 2. In the repo, go to **Settings** -> **Pages** -> **Custom domain**.
 3. Configure DNS at your domain registrar.
 
