@@ -21,9 +21,10 @@
       "year": 2026,
       "category": "photography",
       "description": "Portrait, lifestyle, and event photography focused on mood, composition, and storytelling.",
-      "cover": "https://images.unsplash.com/photo-1491349174775-aaafddd81942?auto=format&fit=crop&w=1400&q=85",
+      "cover": "uploads/manvir/portrait.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1491349174775-aaafddd81942?auto=format&fit=crop&w=1800&q=85",
+        "uploads/manvir/portrait.jpg",
+        "uploads/manvir/source.jpg",
         "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=1800&q=85",
         "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1800&q=85"
       ],
