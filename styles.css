@@ -101,7 +101,7 @@ img {
   max-width: none;
   object-fit: contain;
   object-position: center bottom;
-  background: #171614;
+  background: var(--background);
 }
 
 .intro::after {
@@ -352,6 +352,9 @@ h2 {
   .hero-image {
     order: 1;
     height: min(74vh, 720px);
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
   }
 
   .category-strip {
