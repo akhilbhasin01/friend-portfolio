@@ -40,7 +40,7 @@ for (let index = 0; index < imageUrls.length; index += 1) {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const bytes = Buffer.from(await response.arrayBuffer());
     await writeFile(target, bytes);
-    images.push(`/uploads/${slug}/${filename}`);
+    images.push(`uploads/${slug}/${filename}`);
   } catch (error) {
     console.warn(`Could not download ${url}: ${error.message}`);
     images.push(url);

@@ -23,7 +23,7 @@ const projectImages = document.querySelector("#project-images");
 init();
 
 async function init() {
-  const response = await fetch("/content/projects.json", { cache: "no-store" });
+  const response = await fetch("content/projects.json", { cache: "no-store" });
   const data = await response.json();
   projects = data.projects
     .filter((project) => project.published !== false)

@@ -6,8 +6,12 @@
       "year": 2026,
       "category": "portrait",
       "description": "A quiet portrait session built around clean light, direct framing, and simple movement.",
-      "cover": "/sample/portrait-01.svg",
-      "images": ["/sample/portrait-01.svg", "/sample/portrait-02.svg"],
+      "cover": "https://images.unsplash.com/photo-1491349174775-aaafddd81942?auto=format&fit=crop&w=1400&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1491349174775-aaafddd81942?auto=format&fit=crop&w=1800&q=85",
+        "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1800&q=85",
+        "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=1800&q=85"
+      ],
       "published": true,
       "featured": true
     },
@@ -17,8 +21,12 @@
       "year": 2026,
       "category": "personal",
       "description": "Personal studies in shape, negative space, and subdued color.",
-      "cover": "/sample/personal-01.svg",
-      "images": ["/sample/personal-01.svg", "/sample/personal-02.svg"],
+      "cover": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85",
+        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1800&q=85",
+        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1800&q=85"
+      ],
       "published": true,
       "featured": true
     },
@@ -28,8 +36,12 @@
       "year": 2026,
       "category": "event",
       "description": "Event coverage focused on candid gestures, atmosphere, and small moments between groups.",
-      "cover": "/sample/event-01.svg",
-      "images": ["/sample/event-01.svg", "/sample/event-02.svg"],
+      "cover": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1400&q=85",
+      "images": [
+        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=85",
+        "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1800&q=85",
+        "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1800&q=85"
+      ],
       "published": true,
       "featured": false
     }

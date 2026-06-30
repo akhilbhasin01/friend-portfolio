@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="A minimal portfolio for selected photography and creative work." />
     <title>Friend Name - Portfolio</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css" />
-    <script type="module" src="/site.js"></script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="site.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -20,19 +20,41 @@
       </nav>
     </header>
 
-    <main class="page-shell">
+    <main>
       <section class="intro" data-view="home" aria-labelledby="intro-title">
-        <p class="kicker">Selected work</p>
-        <h1 id="intro-title">Friend Name</h1>
-        <p class="intro-copy">Photographer and visual creative based in the United States.</p>
-        <div class="link-row" aria-label="Social links">
-          <a href="mailto:hello@example.com">Email</a>
-          <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=2200&q=85"
+          alt=""
+        />
+        <div class="hero-copy">
+          <p class="kicker">Selected work</p>
+          <h1 id="intro-title">Friend Name</h1>
+          <p class="intro-copy">Portraits, events, and quiet visual stories.</p>
+          <div class="link-row" aria-label="Social links">
+            <a href="mailto:hello@example.com">Email</a>
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
         </div>
       </section>
 
-      <section class="section" data-view="home" aria-labelledby="work-title">
+      <section class="category-strip" data-view="home" aria-label="Portfolio categories">
+        <a href="#portrait" data-route="portrait">
+          <img src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?auto=format&fit=crop&w=1200&q=85" alt="" />
+          <span>Portrait</span>
+        </a>
+        <a href="#event" data-route="event">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=85" alt="" />
+          <span>Event</span>
+        </a>
+        <a href="#personal" data-route="personal">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85" alt="" />
+          <span>Personal</span>
+        </a>
+      </section>
+
+      <section class="section page-shell" data-view="home" aria-labelledby="work-title">
         <div class="section-heading">
           <h2 id="work-title">Work</h2>
           <a href="#portrait" data-route="portrait">View portrait</a>
@@ -40,7 +62,7 @@
         <div class="project-grid" id="featured-grid"></div>
       </section>
 
-      <section class="archive" data-view="archive" hidden>
+      <section class="archive page-shell" data-view="archive" hidden>
         <div class="page-title">
           <p class="kicker">Archive</p>
           <h1 id="archive-title">Portrait</h1>
@@ -49,7 +71,7 @@
         <p class="empty-state" id="archive-empty" hidden>No published work yet.</p>
       </section>
 
-      <article class="project-page" data-view="project" hidden>
+      <article class="project-page page-shell" data-view="project" hidden>
         <header class="project-header">
           <a class="back-link" id="project-back" href="#home">Back</a>
           <h1 id="project-title"></h1>
@@ -59,7 +81,7 @@
         <div class="image-stack" id="project-images"></div>
       </article>
 
-      <section class="contact" data-view="contact" hidden aria-labelledby="contact-title">
+      <section class="contact page-shell" data-view="contact" hidden aria-labelledby="contact-title">
         <p class="kicker">Contact</p>
         <h1 id="contact-title">For bookings and collaborations.</h1>
         <div class="contact-list">
