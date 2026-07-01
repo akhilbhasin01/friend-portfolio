@@ -1,0 +1,60 @@
+name: Update homepage settings
+description: Change the hero image, profile copy, LinkedIn URL, or service list.
+title: "Update site: "
+labels:
+  - site-settings
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Display name
+      placeholder: Manvir Khangura
+    validations:
+      required: false
+  - type: input
+    id: headline
+    attributes:
+      label: Hero headline
+      placeholder: Manvir Khangura
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Hero description
+      placeholder: Graphic design, photography, social media management, and emerging marketing work.
+    validations:
+      required: false
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn URL
+      placeholder: https://www.linkedin.com/in/manvir-khangura
+    validations:
+      required: false
+  - type: textarea
+    id: services
+    attributes:
+      label: Services
+      description: Put one service per line.
+      placeholder: |
+        Graphic Design
+        Photography
+        Social Media
+        Marketing
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact heading
+      placeholder: For design, content, photography, and marketing collaborations.
+    validations:
+      required: false
+  - type: textarea
+    id: hero
+    attributes:
+      label: Hero image URLs or uploaded image
+      description: Paste an image URL, or drag one image into this box after the issue form opens in GitHub.
+    validations:
+      required: false

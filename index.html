@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Manvir Khangura portfolio: graphic design, photography, social media management, and marketing." />
+    <meta name="description" content="Manvir Khangura portfolio: graphic design, photography, social media management, and marketing." data-site="metaDescription" />
     <title>Manvir Khangura - Portfolio</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css?v=20260630-dark-mode" />
@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" data-route="home">Manvir Khangura</a>
+      <a class="brand" href="#home" data-route="home" data-site="name">Manvir Khangura</a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#design" data-route="design">Design</a>
         <a href="#photography" data-route="photography">Photography</a>
@@ -27,12 +27,13 @@
           class="hero-image"
           src="uploads/manvir/portrait.jpg"
           alt=""
+          data-site="heroImage"
         />
         <div class="hero-copy">
-          <p class="kicker">Creative portfolio</p>
-          <h1 id="intro-title">Manvir Khangura</h1>
-          <p class="intro-copy">Graphic design, photography, social media management, and emerging marketing work.</p>
-          <div class="link-row" aria-label="Social links">
+          <p class="kicker" data-site="kicker">Creative portfolio</p>
+          <h1 id="intro-title" data-site="headline">Manvir Khangura</h1>
+          <p class="intro-copy" data-site="description">Graphic design, photography, social media management, and emerging marketing work.</p>
+          <div class="link-row" aria-label="Social links" data-site="heroLinks">
             <a href="https://www.linkedin.com/in/manvir-khangura" target="_blank" rel="noreferrer">LinkedIn</a>
             <span>Graphic Design</span>
             <span>Photography</span>
@@ -85,8 +86,8 @@
 
       <section class="contact page-shell" data-view="contact" hidden aria-labelledby="contact-title">
         <p class="kicker">Contact</p>
-        <h1 id="contact-title">For design, content, photography, and marketing collaborations.</h1>
-        <div class="contact-list">
+        <h1 id="contact-title" data-site="contactHeading">For design, content, photography, and marketing collaborations.</h1>
+        <div class="contact-list" data-site="contactLinks">
           <a href="https://www.linkedin.com/in/manvir-khangura" target="_blank" rel="noreferrer">LinkedIn</a>
           <span>Graphic Design</span>
           <span>Photography</span>

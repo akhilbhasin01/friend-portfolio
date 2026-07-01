@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 
 const validCategories = new Set(["design", "photography", "social", "marketing"]);
 const data = JSON.parse(await readFile("content/projects.json", "utf8"));
+const site = JSON.parse(await readFile("content/site.json", "utf8"));
 
 if (!Array.isArray(data.projects)) {
   throw new Error("content/projects.json must contain a projects array.");
@@ -27,3 +28,15 @@ for (const project of data.projects) {
 }
 
 console.log(`Validated ${data.projects.length} project(s).`);
+
+for (const key of ["name", "headline", "description", "heroImage", "linkedinUrl", "contactHeading"]) {
+  if (!site[key] || typeof site[key] !== "string") {
+    throw new Error(`content/site.json is missing string field: ${key}`);
+  }
+}
+
+if (!Array.isArray(site.services) || site.services.length === 0) {
+  throw new Error("content/site.json must contain at least one service.");
+}
+
+console.log("Validated site settings.");

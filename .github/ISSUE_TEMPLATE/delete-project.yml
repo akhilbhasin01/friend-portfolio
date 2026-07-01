@@ -1,0 +1,23 @@
+name: Delete portfolio project
+description: Remove a project from the portfolio without editing code.
+title: "Delete project: "
+labels:
+  - delete-project
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project slug or title
+      description: Use the project title or the slug from the URL after #project/.
+      placeholder: graphic-design
+    validations:
+      required: true
+  - type: dropdown
+    id: confirm
+    attributes:
+      label: Confirm deletion
+      options:
+        - Keep this project
+        - Delete this project
+    validations:
+      required: true

@@ -15,11 +15,16 @@ Then open `http://localhost:4321`.
 Use GitHub Issues:
 
 1. Open the repository on GitHub.
-2. Choose **Issues** -> **New issue** -> **Add portfolio project**.
-3. Fill in the form with title, category, description, and image links.
+2. Choose **Issues** -> **New issue**.
+3. Pick one of the forms:
+   - **Add portfolio project** creates or updates a project.
+   - **Delete portfolio project** removes a project by title or slug.
+   - **Update homepage settings** changes the hero image, headline, description, LinkedIn URL, contact heading, and service list.
 4. Submit the issue.
-5. GitHub Actions opens a pull request with updated `content/projects.json` and downloaded images.
-6. Merge the pull request to publish.
+5. GitHub Actions opens a pull request with the content change.
+6. Review and merge the pull request to publish.
+
+This gives a no-code edit flow similar to a lightweight CMS, while still keeping every change reviewable before it goes live.
 
 ## Add content locally
 
@@ -28,6 +33,8 @@ npm run content:new -- "Project Title" design 2026
 ```
 
 Then edit the generated project entry in `content/projects.json`.
+
+Homepage/profile settings live in `content/site.json`.
 
 ## Deploy
 

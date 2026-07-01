@@ -8,7 +8,9 @@
     "build": "node scripts/build-site.mjs",
     "preview": "python3 -m http.server 4321",
     "content:issue": "node scripts/issue-to-project.mjs",
-    "content:new": "node scripts/new-project.mjs"
+    "content:new": "node scripts/new-project.mjs",
+    "content:delete": "node scripts/delete-project-from-issue.mjs",
+    "content:site": "node scripts/update-site-from-issue.mjs"
   },
   "dependencies": {},
   "devDependencies": {}

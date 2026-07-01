@@ -1,0 +1,52 @@
+name: Update site from issue
+
+on:
+  issues:
+    types:
+      - opened
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  update-site:
+    if: contains(github.event.issue.labels.*.name, 'site-settings') || startsWith(github.event.issue.title, 'Update site:')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Convert issue into site settings
+        run: node scripts/update-site-from-issue.mjs
+
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: Update site settings from issue
+          title: ${{ github.event.issue.title }}
+          body-path: content-summary.txt
+          branch: content/site-issue-${{ github.event.issue.number }}
+          delete-branch: true
+
+      - name: Comment on issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prUrl = '${{ steps.cpr.outputs.pull-request-url }}';
+            const message = prUrl
+              ? `Created a site settings pull request: ${prUrl}`
+              : 'No pull request was created. The site settings may already match the repository.';
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: message,
+            });
