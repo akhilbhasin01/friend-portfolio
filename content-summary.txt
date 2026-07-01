@@ -1,2 +1,1 @@
-Added Ur mom in content/projects.json
-Added 1 image reference(s).
+Deleted project "graphic-design" from content/projects.json.

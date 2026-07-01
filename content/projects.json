@@ -1,21 +1,6 @@
 {
   "projects": [
     {
-      "slug": "graphic-design",
-      "title": "Graphic Design",
-      "year": 2026,
-      "category": "design",
-      "description": "Visual identity, layout, and digital design work with a clean, contemporary style.",
-      "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=85",
-      "images": [
-        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1800&q=85",
-        "https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=1800&q=85",
-        "https://images.unsplash.com/photo-1602576666092-bf6447a729fc?auto=format&fit=crop&w=1800&q=85"
-      ],
-      "published": true,
-      "featured": true
-    },
-    {
       "slug": "photography",
       "title": "Photography",
       "year": 2026,
