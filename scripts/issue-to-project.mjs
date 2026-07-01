@@ -81,7 +81,7 @@ console.log(summary);
 
 function parseIssueForm(body) {
   const fields = new Map();
-  const sections = body.split(/\n###\s+/g);
+  const sections = body.replace(/^###\s+/, "").split(/\n###\s+/g);
   for (const section of sections) {
     const [rawTitle, ...rest] = section.split("\n");
     if (!rawTitle || rest.length === 0) continue;
